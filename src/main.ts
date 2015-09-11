@@ -1,13 +1,10 @@
 /// <reference path="./tsd.d.ts"/>
 import {bootstrap} from 'angular2/angular2';
 
-import {Tree} from './components/tree/tree';
+import {Application} from './components/application/application';
 
 export function main() {
-  bootstrap(Tree);
+  bootstrap(Application);
 }
 
 main();
-
-import fs = require('fs.remote!');
-console.log('fs: ',fs);
