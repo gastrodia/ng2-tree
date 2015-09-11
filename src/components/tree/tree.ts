@@ -1,5 +1,10 @@
 import ng = require('angular2/angular2');
 
+import {remote} from '../electron/electron';
+
+import fs from 'fs.remote!';
+
+
 @ng.Component({
   selector:'tree',
   properties:[]

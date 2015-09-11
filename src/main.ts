@@ -8,3 +8,6 @@ export function main() {
 }
 
 main();
+
+import fs = require('fs.remote!');
+console.log('fs: ',fs);
