@@ -53,3 +53,11 @@ export class Node{
     this._children.push(node);
   }
 }
+
+@ng.Directive({
+  selector:'[click-toggle]'
+})
+
+export class ClickToggle{
+  
+}
