@@ -7,4 +7,4 @@ export function main() {
   bootstrap(Application);
 }
 
-main();
+main(); 

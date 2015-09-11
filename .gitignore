@@ -7,4 +7,3 @@ bower_components
 .settings
 npm-debug.log
 build
-tsconfig.json
