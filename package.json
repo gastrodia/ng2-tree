@@ -1,0 +1,24 @@
+{
+  "name": "ng2-tree",
+  "version": "1.0.0",
+  "description": "a tree component build on angular2",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gastrodia/ng2-tree.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gastrodia/ng2-tree/issues"
+  },
+  "homepage": "https://github.com/gastrodia/ng2-tree#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3",
+    "through2": "^2.0.0"
+  }
+}
