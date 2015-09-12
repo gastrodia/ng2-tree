@@ -8,20 +8,39 @@ module.exports = function(config) {
     basePath: '',
     plugins: [
       require('karma-jasmine'),
-      require('karma-chrome-launcher'),
-      require('karma-coverage')
+      //require('karma-chrome-launcher'),
+      require('karma-electron-launcher'),
+      require('karma-coverage'),
+      require('karma-systemjs')
     ],
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: ['systemjs','jasmine'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'src.js','test.js'
+      'build/test/*.js'
     ],
 
+    systemjs: {
+        // Path to your SystemJS configuration file
+        configFile: 'config.js',
+
+        // Patterns for files that you want Karma to make available, but not loaded until a module requests them. eg. Third-party libraries.
+        serveFiles: [
+            './**/*.js'
+        ],
+
+        // SystemJS configuration specifically for tests, added after your config file.
+        // Good for adding test libraries and mock modules
+        config: {
+            paths: {
+                //'angular-mocks': 'bower_components/angular-mocks/angular-mocks.js'
+            }
+        }
+    },
 
     // list of files to exclude
     exclude: [
@@ -32,7 +51,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'src.js': 'coverage'
+      'buld/src/**/*.js': 'coverage'
     },
 
 
@@ -64,8 +83,8 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
-
+    //browsers: ['Chrome'],
+    browsers: ['Electron'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits

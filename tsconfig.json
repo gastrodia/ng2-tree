@@ -16,17 +16,11 @@
         "outDir": "./build"
     },
     "filesGlob": [
+        "./typings/**/*.ts",
         "./src/**/*.ts",
-        "./typings/**/*.ts"
+        "./test/**/*.ts"
     ],
     "files": [
-        "./src/components/application/application.ts",
-        "./src/components/contextmenu/Contextmenu.ts",
-        "./src/components/electron/electron.ts",
-        "./src/components/menu/menu.ts",
-        "./src/components/tree/tree.ts",
-        "./src/main.ts",
-        "./src/tsd.d.ts",
         "./typings/angular2/angular2.d.ts",
         "./typings/angular2/router.d.ts",
         "./typings/es6-promise/es6-promise.d.ts",
@@ -34,12 +28,24 @@
         "./typings/github-electron/electron-prebuilt.d.ts",
         "./typings/github-electron/github-electron-renderer.d.ts",
         "./typings/github-electron/github-electron.d.ts",
+        "./typings/jasmine/jasmine-tests.ts",
+        "./typings/jasmine/jasmine.d.ts",
+        "./typings/jasmine/legacy/jasmine-1.3-tests.ts",
+        "./typings/jasmine/legacy/jasmine-1.3.d.ts",
         "./typings/jquery/jquery.d.ts",
         "./typings/node/node-remote.d.ts",
         "./typings/node/node.d.ts",
         "./typings/null.ts",
         "./typings/rx/rx-lite.d.ts",
         "./typings/rx/rx.d.ts",
-        "./typings/tsd.d.ts"
+        "./typings/tsd.d.ts",
+        "./src/components/application/application.ts",
+        "./src/components/contextmenu/Contextmenu.ts",
+        "./src/components/electron/electron.ts",
+        "./src/components/menu/menu.ts",
+        "./src/components/tree/tree.ts",
+        "./src/main.ts",
+        "./src/tsd.d.ts",
+        "./test/test.ts"
     ]
 }

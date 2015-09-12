@@ -4,3 +4,4 @@
 /// <reference path="node/node.d.ts"/>
 /// <reference path="./node/node-remote.d.ts"/>
 /// <reference path="./github-electron/github-electron-renderer.d.ts"/>
+/// <reference path="./jasmine/jasmine.d.ts"/>
