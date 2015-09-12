@@ -19,6 +19,14 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.3",
+    "jasmine": "^2.3.2",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-coverage": "^0.5.2",
+    "karma-jasmine": "^0.3.6",
     "through2": "^2.0.0"
+  },
+  "dependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma-jasmine": "^0.3.6"
   }
 }
