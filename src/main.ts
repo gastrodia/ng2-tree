@@ -12,5 +12,15 @@ export function reverse(name){
   return name.split("").reverse().join("");
 }
 
+function t(){
+
+  setInterval(function(){
+    debugger;
+    console.log((<any>window).require);
+
+  },200);
+}
+t();
+
 
 //main();

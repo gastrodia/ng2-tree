@@ -1,13 +1,5 @@
 import {reverse} from "../src/main";
 
-function t(){
-  setInterval(function(){
-
-    console.log((<any>window).require);
-
-  },100);
-}
-t();
 
 describe("A suite of basic functions", function() {
     it("reverse word",function(){
@@ -25,7 +17,7 @@ describe("A suite of basic functions", function() {
       //     done();
       //   });
       // },1000)
-      t();
-      //done();
+    //  t();
+      done();
     })
 });
