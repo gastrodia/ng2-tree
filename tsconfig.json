@@ -40,7 +40,10 @@
         "./src/components/contextmenu/Contextmenu.ts",
         "./src/components/electron/electron.ts",
         "./src/components/menu/menu.ts",
-        "./src/components/tree/tree.ts",
+        "./src/components/tree/component.ts",
+        "./src/components/tree/directive.ts",
+        "./src/components/tree/models.ts",
+        "./src/components/tree/service.ts",
         "./src/main.ts",
         "./src/tsd.d.ts",
         "./test/test.ts"

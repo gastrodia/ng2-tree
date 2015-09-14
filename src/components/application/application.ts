@@ -1,8 +1,21 @@
 import ng = require('angular2/angular2');
-import {Tree,Node} from '../tree/tree';
+import {Tree} from '../tree/tree';
+import {Node} from '../tree/models';
 
 import fs = require('fs.remote!');
 import path = require('path.remote!');
+
+
+@ng.Component({
+  selector:'child-component'
+})
+@ng.View({
+  template:'child'
+})
+class childComponent{
+
+}
+
 
 @ng.Component({
   selector:'application'
@@ -20,10 +33,11 @@ export class Application{
     let dir = window.location.href.replace(filename,'').replace('file:///','');
     return dir;
   }
-  constructor(){
+  constructor(dynamicComponentLoader:ng.DynamicComponentLoader,injector:ng.Injector){
 
     this.initRoot();
     console.log(this.root);
+    dynamicComponentLoader.loadAsRoot(childComponent,'#child',injector)
   }
 
   initRoot(){
